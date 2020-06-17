@@ -6,6 +6,8 @@ const app = express()
 const mongoose = require('mongoose')
 const session = require('express-session')
 
+
+
 const TWO_HOURS = 1000 * 60 * 60 * 2
 
 
@@ -24,7 +26,9 @@ app.use(session({
 }))
 
 
-mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, useFindAndModify: true, useUnifiedTopology: true  })
+// mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, useFindAndModify: true, useUnifiedTopology: true  })
+
+mongoose.connect(process.env.DATABASE_URL_ATLAS, { useNewUrlParser: true, useFindAndModify: true, useUnifiedTopology: true, useCreateIndex: true  })
 
 
 
@@ -41,7 +45,7 @@ app.use(express.urlencoded({ extended: true}));
 app.use('*admin*', (req, res, next) => {
 
     if (!req.session.userId) {
-        return res.status(401).json({message: 'Du har ikke adgang'})
+        // return res.status(401).json({message: 'Du har ikke adgang'})
     }
 
     next()

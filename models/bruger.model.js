@@ -49,4 +49,4 @@ brugerSchema.methods.comparePassword = function (indtastetPassword, cb) {
     });
    };
 
-module.exports = mongoose.model('Bruger', brugerSchema)
+module.exports = mongoose.model('Bruger', brugerSchema, "hundebruger")

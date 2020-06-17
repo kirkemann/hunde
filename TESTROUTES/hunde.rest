@@ -2,7 +2,7 @@ GET http://localhost:5002/hunde
 
 ###
 
-GET http://localhost:5002/hunde/admin/5ee9f0354ff1205a9827f621
+GET http://localhost:5002/hunde/5eea09ce29f7892e58025d54
 
 
 ###
@@ -10,7 +10,7 @@ POST http://localhost:5002/hunde/admin
 Content-Type: application/json
 
 {
-    "name": "Glarbo Quitte",
+    "name": "Laguso Jago",
     "hunderace": "Schæfer",
     "hundealder": "2"
 }
