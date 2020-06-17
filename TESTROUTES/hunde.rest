@@ -1,0 +1,35 @@
+GET http://localhost:5002/hunde
+
+###
+
+GET http://localhost:5002/hunde/admin/5ee9f0354ff1205a9827f621
+
+
+###
+POST http://localhost:5002/hunde/admin
+Content-Type: application/json
+
+{
+    "name": "Glarbo Quitte",
+    "hunderace": "Schæfer",
+    "hundealder": "2"
+}
+
+###
+
+DELETE http://localhost:5002/hunde/admin
+
+###
+
+PATCH  http://localhost:5002/hunde/admin/5ee9eff24ff1205a9827f620
+Content-Type: application/json
+
+{
+    "name": "Aixa Randa",
+    "hunderace": "Schæfer",
+    "hundealder": "8 mdr"
+}
+
+###
+
+GET http://localhost:5002/hunde/soeg/

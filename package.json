@@ -1,0 +1,27 @@
+{
+  "name": "hunde",
+  "version": "1.0.0",
+  "engines": {
+    "node": "12.14.1"
+  },
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serverStart": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "author": "Frank Kirkemann",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.9.19"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "standard": "^14.3.4"
+  }
+}
