@@ -1,0 +1,36 @@
+GET https://hundedata.herokuapp.com/bruger/admin
+
+###
+
+GET https://hundedata.herokuapp.com/bruger/admin/5ee9ef934ff1205a9827f61e
+
+
+###
+POST https://hundedata.herokuapp.com/bruger/admin
+Content-Type: application/json
+
+{
+    "brugernavn": "bentsen",
+    "navn": "bent bentsen",
+    "email": "b@y.dk",
+    "password": "123456"
+}
+
+###
+
+PUT https://hundedata.herokuapp.com/bruger/admin/5ee9ef934ff1205a9827f61e
+Content-Type: application/json
+
+{
+    "brugernavn": "Timsen",
+    "navn": "tim Timsen",
+    "email": "t@t.dk",
+    "password": "123456"
+}
+###
+
+DELETE https://hundedata.herokuapp.com/bruger/admin
+
+###
+
+//mongodb+srv://Kirkemann:<password>@kirkemann-ah9zl.azure.mongodb.net/test

@@ -1,0 +1,35 @@
+GET https://hundedata.herokuapp.com/hunde
+
+###
+
+GET https://hundedata.herokuapp.com/hunde/5eea09ce29f7892e58025d54
+
+
+###
+POST https://hundedata.herokuapp.com/hunde/admin
+Content-Type: application/json
+
+{
+    "name": "Laguso Jago",
+    "hunderace": "Schæfer",
+    "hundealder": "2"
+}
+
+###
+
+DELETE https://hundedata.herokuapp.com/hunde/admin
+
+###
+
+PATCH  https://hundedata.herokuapp.com/hunde/admin/5ee9eff24ff1205a9827f620
+Content-Type: application/json
+
+{
+    "name": "Aixa Randa",
+    "hunderace": "Schæfer",
+    "hundealder": "8 mdr"
+}
+
+###
+
+GET https://hundedata.herokuapp.com/hunde/soeg/

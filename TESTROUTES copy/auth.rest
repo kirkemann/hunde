@@ -1,0 +1,15 @@
+POST https://hundedata.herokuapp.com/auth/login
+Content-Type: application/json
+
+{
+"brugernavn": "bentsen",
+"password": "123456"
+}
+
+###
+
+GET https://hundedata.herokuapp.com/auth/logout
+
+###
+
+GET https://hundedata.herokuapp.com/auth/loggedin
