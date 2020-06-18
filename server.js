@@ -26,9 +26,9 @@ app.use(session({
 }))
 
 
-mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, useFindAndModify: true, useUnifiedTopology: true, useCreateIndex: true   })
+// mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, useFindAndModify: true, useUnifiedTopology: true, useCreateIndex: true   })
 
-// mongoose.connect(process.env.DATABASE_URL_ATLAS, { useNewUrlParser: true, useFindAndModify: true, useUnifiedTopology: true, useCreateIndex: true  })
+mongoose.connect(process.env.DATABASE_URL_ATLAS, { useNewUrlParser: true, useFindAndModify: true, useUnifiedTopology: true, useCreateIndex: true  })
 
 
 
