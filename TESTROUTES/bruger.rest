@@ -10,9 +10,9 @@ POST http://localhost:5002/bruger/admin
 Content-Type: application/json
 
 {
-    "brugernavn": "olesen",
-    "navn": "ole olesen",
-    "email": "o@y.dk",
+    "brugernavn": "bentsen",
+    "navn": "bent bentsen",
+    "email": "b@y.dk",
     "password": "123456"
 }
 
